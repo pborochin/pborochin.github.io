@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSGT72HLSC"></script>
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'G-XSGT72HLSC');
+	</script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Paul Borochin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--link href="css/csstouse.css" rel="stylesheet" -->
+	
+	<script>
+	
+	var bigcsss = ["css/d7.css", "css/l7.css","css/d1.css", "css/l1.css", "css/d2.css", "css/l2.css","css/d3.css", "css/l3.css","css/d4.css", "css/l4.css","css/d5.css", "css/l5.css","css/d6.css", "css/l6.css",];
+	
+	var currentday = new Date().getDay();
+	var csss = [bigcsss[2*currentday], bigcsss[2*currentday + 1]];
+	
+	var timedef = 1;
+	function timeStylesheet(currentTime) {
+		  if (0 <= currentTime&&currentTime < 6) {
+		   document.write("<link id='stylesheet' rel='stylesheet' href= '" + csss[0] + "' type='text/css'>");
+		   timedef = 0;
+		  }
+		  if (6 <= currentTime&&currentTime < 22) {
+		   document.write("<link id='stylesheet' rel='stylesheet' href= '" + csss[1] + "' type='text/css'>");
+		   timedef = 1;
+		  }
+		  if (22 <= currentTime&&currentTime <= 24) {
+		   document.write("<link id='stylesheet' rel='stylesheet' href= '" + csss[0] + "' type='text/css'>");
+		   timedef = 0;
+		  }
+	}
+
+	var currentTime_in = new Date().getHours();
+	timeStylesheet(currentTime_in);
+
+	
+	var stylesheet = document.getElementById("stylesheet");
+    function setStyleSheet(){
+		stylesheet.setAttribute('href', csss[1 - timedef]);
+		timedef = 1 - timedef;
+    } 
+	
+	</script>
+	
+ 	<noscript><link href="css/celadonblue.css" rel="stylesheet"></noscript>
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Paul Borochin</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/borochin_profile3_sqr.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#data">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#mii">Media and Industry Impact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://drive.google.com/file/d/1w2JGooOXA9Szs035CsshwMlXzRJbSvLf/view?usp=sharing" target="_blank">CV</a>
+          </li>
+        </ul>
+      </div>
+	  
+	  <div style="margin-left: auto; margin-right: 0;">
+	  <a onclick="setStyleSheet()" href="#"><img src="img/sunxmoon.svg" alt="" height="40"></a>
+	  </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Paul
+            <span class="text-primary">Borochin</span>
+          </h1>
+          <div class="subheading mb-3">Financial Economist · Data Scientist · Professor · PhD · CFA · <a href="mailto:paul.borochin@gmail.com">paul.borochin AT gmail.com</a></div>
+          <p class="mb-2" style="text-align:justify">
+						I earned a Ph.D. in Finance from the Fuqua School at Duke University and a B.S. in Finance and Statistics with minors in Mathematics and Computer Science from the Wharton School at the University of Pennsylvania. I am a CFA charterholder.
+						<br>
+						<br>
+
+						My research draws on information from the public markets to provide quantitative insights on future equity and option performance, identify expected value effects of corporate events, and predict policy decisions. I also study the effects of institutional ownership and common ownership linkages between firms for different types of institutional owners defined by their investment styles. I am also interested in financial applications of machine learning. My research has been covered in posts by the CFA Institute's Enterprising Investor blog, the Harvard Law School Forum on Corporate Governance and Financial Regulation, and the Columbia Law School's Blue Sky blog on corporations and capital markets.
+						<br>
+						<br>
+
+						I teach graduate courses in portfolio and risk management for the Student Managed Investment Fund, financial modeling, and mathematics of financial derivatives, as well as an undergraduate course in investments. I have previously taught a doctoral seminar in asset pricing theory and financial mathematics and undergraduate courses in advanced corporate finance and general principles of finance.
+						<br>
+						<br>
+						
+						My published and ongoing research projects are available on
+						<a href="https://scholar.google.com/citations?user=D3fPEoMAAAAJ" target="_blank">Google Scholar</a> and 
+						<a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1786790" target="_blank">SSRN</a>.
+						<br>  
+						<br> 				
+						Get in touch via email at <a href="mailto:paul.borochin@gmail.com" target="_blank">paul.borochin AT gmail.com</a>. For more details on my work check out my <a href="https://drive.google.com/file/d/1w2JGooOXA9Szs035CsshwMlXzRJbSvLf/view?usp=sharing" target="_blank">Curriculum Vitae</a>, and find me on <a href="https://www.linkedin.com/in/pborochin" target="_blank">LinkedIn</a>, <a href="https://twitter.com/borochinpaul" target="_blank">Twitter</a>, <a href="https://www.youtube.com/channel/UCS7S8MwyfBBaeWCO3w9Apyw" target="_blank">YouTube</a>, and <a href="https://github.com/pborochin/" target="_blank">GitHub</a>.
+						<br> 
+						<br> 
+						<br>
+
+						<iframe width="360" height="203" src="https://www.youtube.com/embed/cauBEeHBPFU?list=PLSh5E_hxCoI6EfkqSQSYKehS8GhdYgoFT" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+						<br>
+						<br>
+						<br>
+						
+          <ul class="list-inline list-social-icons mb-0">
+			<li class="list-inline-item">
+              <a href="https://drive.google.com/file/d/1w2JGooOXA9Szs035CsshwMlXzRJbSvLf/view?usp=sharing" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/pborochin" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="https://twitter.com/borochinpaul" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="https://www.youtube.com/channel/UCS7S8MwyfBBaeWCO3w9Apyw" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="https://github.com/pborochin/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research">
+        <div class="my-auto">
+          <h2 class="mb-3">Research</h2>
+			<div>
+				<p class="mb-5" style="text-align:justify">
+				My research interests are in applications of asset pricing theory to corporate events and policies, with sub-specializations in derivatives, institutional ownership, corporate governance, information asymmetry, and M&A. I am also interested in natural language processing, machine learning, and other applications of technology to financial economics. I recently hosted a <a href="https://www.youtube.com/watch?v=wlvOZIbBOnw&list=PLSh5E_hxCoI6JwHcdmFVme6u46cZsEZev" target="_blank">research conference</a> on machine learning and natural language processing methods in finance.
+				</p>
+			</div>
+
+			<div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Identifying the Heterogeneous Impact of Highly Anticipated Events: Evidence from the Tax Cuts and Jobs Act</h3>
+			  <div class="subheading mb-0">with <a href="https://muratcelik.faculty.economics.utoronto.ca/" target="_blank">Murat Celik</a>, <a href="https://www.xutianur.com/" target="_blank">Xu Tian</a> and
+                <a href="https://www.toniwhited.com/" target="_blank">Toni Whited</a></div>
+              <div class="subheading mb-2"> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3806560" target="_blank">SSRN</a> |
+								<a href="javascript:void(0);" onclick="citfunction('identifying_impact');">Citation</a> 
+							</div>
+							<div id="identifying_impact" class="mb-3" style="display:none;">
+								@article{borochin2021identifying, <br>
+									title={Identifying the Heterogeneous Impact of Highly Anticipated Events: Evidence from the Tax Cuts and Jobs Act}, <br>
+									author={Borochin, Paul and Celik, Murat Alp and Tian, Xu and Whited, Toni M}, <br>
+									journal={Available at SSRN}, <br>
+									year={2021}} <br>
+							</div>
+              <p style="text-align:justify">We develop a method for estimating the stock market impact of aggregate events. <span id="morep1" style="display:none;">Based on using data on both stock and options prices, our technique accounts for two important sources of bias present in traditional methods. First, our method takes into account market anticipation, without the need for information on specific firm characteristics. Many event studies only measure a fraction of an event's full value effect, so the measured market reaction at event resolution can be misleading, particularly in the case of a very high degree of market anticipation. Second, our method is robust to the possibility of the event being good news for some firms and bad for others, without prior specification of this heterogeneity. We apply the method to the passage of the Tax Cuts and Jobs Act (TCJA), which exhibits both anticipation and heterogeneity. We estimate the market anticipated the probability of passage to be as high as 95% 30 days before the event. The full value impact of the TCJA is found to be 12.36%, compared to 0.68% when market anticipation is ignored. The firm-level impact of the TCJA is considerably heterogeneous, with large and innovative firms with high growth prospects being the largest winners. </span>
+			  <a href="javascript:void(0);" onclick="readmoreless('morep1', 'morep1Btn')" id="morep1Btn"><b>(Expand)</b></a></p>
+            </div>
+          </div>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Does Diversity Help Minorities? Evidence From Sell-Side Equity Analysts</h3>
+              <div class="subheading mb-0">with Vidhi Chhaochharia and
+                <a href="http://moya.bus.miami.edu/~akumar/" target="_blank">Alok Kumar</a>
+							</div>
+							<div class="subheading mb-2">
+								<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3772503" target="_blank">SSRN</a> | <a href="javascript:void(0);" onclick="citfunction('minority_analysts');">Citation</a> 
+              </div>
+							<div id="minority_analysts" class="mb-2" style="display:none;">
+								@article{borochin2021minority, <br>
+								  title={Minority Analysts, Diversity, and Market Behavior}, <br>
+								  author={Borochin, Paul and Chhaochharia, Vidhi and Kumar, Alok}, <br>
+								  journal={Available at SSRN 3806560}, <br>
+							      year={2021}} <br>
+							</div>
+							<p style="text-align:justify">Using the economic setting of sell-side equity analysts, we demonstrate that racial/ethnic diversity does not always help the minority groups. <span id="morep2" style="display:none;">Race/ethnicity of analysts influences the forecasting style and accuracy of equity analysts, where these accuracy differences primarily reflect the effects of brokerage diversity. Surprisingly, the accuracy of minority analysts is adversely affected by brokerage diversity while White analysts benefit from higher brokerage diversity. The career outcomes of analysts are affected by their race/ethnicity and brokerage diversity, while stock market participants do not perceive diversity-based accuracy differences accurately and mis-react to forecast revisions. Collectively, these results suggest that within-group competition may reduce the potential benefits of diversity.</span>
+							<a href="javascript:void(0);" onclick="readmoreless('morep2', 'morep2Btn')" id="morep2Btn"><b>(Expand)</b></a></p>
+            </div>
+          </div>
+
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">The Economic Value of Equity Implied Volatility Forecasting with Machine Learning</h3>
+              <div class="subheading mb-0">with <a href="https://sites.google.com/site/yanhuizhao8" target="_blank">Yanhui Zhao</a>
+							</div>
+							<div class="subheading mb-2">
+								<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3684864" target="_blank">SSRN</a> |
+								<a href="javascript:void(0);" onclick="citfunction('ml_volatility');">Citation</a> | <a href="https://www.fma.org/conference-awards" target="_blank">FMA 2020 Best Paper Award</a> </div>
+							<div id="ml_volatility" class="mb-2" style="display:none;">
+								@article{borochin2021economic, <br>
+								  title={The Economic Value of Equity Implied Volatility Forecasting with Machine Learning}, <br>
+								  author={Borochin, Paul and Zhao, Yanhui}, <br>
+								  journal={Available at SSRN}, <br>
+								  year={2021}} <br>
+							</div>
+							<p style="text-align:justify">We evaluate the importance of nonlinear interactions in volatility forecasting by comparing the predictive power of decision tree ensemble models relative to classical ones for normalized at-the-money implied volatility innovations. <span id="morep3" style="display:none;">We measure the economic significance of these predictions in cross-sectional and time series pricing tests of delta-hedged option returns. Classification tree ensembles meaningfully outperform a multinomial logit classifier in delta-hedged option portfolio sorts on volatility innovation forecast data, while regression tree ensembles outperform OLS and LASSO models as well. Since the predictive variables are the same across all models, these performance differences likely capture the value of nonlinear interactions in implied volatility forecasts. Our results are robust to look-ahead bias and model overfitting.</span>
+							<a href="javascript:void(0);" onclick="readmoreless('morep3', 'morep3Btn')" id="morep3Btn"><b>(Expand)</b></a></p>
+            </div>
+          </div>
+
+			<div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Do Boards Have Style? Evidence from Director Style Divergence and Board Turnover </h3>
+              <div class="subheading mb-0">with Robert Bird, Luchun Ma, and John Knopf
+              </div>
+							<div class="subheading mb-2">
+								<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3292449" target="_blank">SSRN</a> |
+								<a href="javascript:void(0);" onclick="citfunction('citbondbeholder');">Citation</a></div>
+							<div id="citbondbeholder" class="mb-2" style="display:none;">
+								@article{bird2019boards, <br>
+								  title={Do Boards Have Style? Evidence from Director Style Divergence and Board Turnover}, <br>
+								  author={Bird, Robert C and Borochin, Paul and Knopf, John D and Ma, Luchun}, <br>
+								  journal={Available at SSRN}, <br>
+								  year={2021}} <br>
+							</div>
+              <p style="text-align:justify">We identify persistent director style effects on corporate policies. Director style explains a significant amount of variances in finance, investment, operations, and governance, among others. <span id="morep4" style="display:none;">The results are significantly different from counterfactual random assignments of directors to firms. We also aggregate director effects at the firm board level to create a board style. Directors with effects that deviate from the board’s overall policy are significantly more likely to leave the board or leave their appointment to key board committees such as the compensation committee. Style divergent directors are also more likely to leave the board as a CEO’s total compensation increases. </span>
+			  <a href="javascript:void(0);" onclick="readmoreless('morep4', 'morep4Btn')" id="morep4Btn"><b>(Expand)</b></a></p>
+            </div>
+          </div>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Other working papers on <a href="http://ssrn.com/author=1786790" target="_blank">SSRN</a> </h3>
+            </div>
+          </div>
+		  
+        </div>
+
+      </section>
+
+	  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="data">
+        <div class="my-auto">
+          <h2 class="mb-2">Data</h2>
+		  <div>
+		   <h3 class="mb-0">Skewness Factor-Mimicking Portfolios</h3>
+			<p class="mb-3" style="text-align:justify">
+				Monthly risk-neutral skewness (SKEW) factor-mimicking portfolios with equal- and value-weighted returns that allow estimation of skewness exposure for non-optionable stocks from <a href="https://cfr.ivo-welch.info/forthcoming/borochin2020risk.pdf" target="_blank">Risk Neutral Skewness Predicts Price Rebounds and so can Improve Momentum Performance</a> (jointly with <a href="https://sites.google.com/site/yanhuizhao8/" target="_blank">Yanhui Zhao</a>), Critical Finance Review forthcoming.
+				<br>
+				<br>
+				
+				<a href="https://drive.google.com/open?id=1G_NzyIz9YFtvUP31-SlBrgDPVk8clUS5" target="_blank">Download link</a> (CSV Format)
+			</p>
+		</div>
+	  </section>
+	  
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="teaching">
+        <div class="my-auto">
+          <h2 class="mb-2">Teaching</h2>
+		  <div>
+			<p class="mb-3" style="text-align:justify">
+				I teach graduate courses in portfolio and risk management for the University of Miami Student Managed Investment Fund, financial modeling, and mathematics of financial derivatives as well as an undergraduate course in investments. I have previously taught a PhD seminar in asset pricing theory and undergraduate courses in advanced corporate finance and general principles of finance at the University of Connecticut.
+			</p>
+		</div>
+
+
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Miami</h3>
+              <div class="mb-0">FIN 320: Investment and Security Markets (Undergraduate) <a href="https://drive.google.com/open?id=1G_NzyIz9YFtvUP31-SlBrgDPVk8clUS5" target="_blank">Syllabus</a> </div>
+			  <div class="mb-0">FIN 457/458/657/658: Student Managed Investment Fund Portfolio Manager I & II (Undergrad, Masters) <a href="https://drive.google.com/open?id=1G_NzyIz9YFtvUP31-SlBrgDPVk8clUS5" target="_blank">Syllabus</a> </div>
+			  <div class="mb-0">FIN 683: Financial Modeling (Masters) <a href="https://drive.google.com/open?id=1T2dapdvX0eOcgHsBltRZJOMDffjf0ngY" target="_blank">Syllabus</a> </div>
+			  <div class="mb-0">FIN 685: Mathematics of Financial Derivatives (Masters) <a href="https://drive.google.com/open?id=1n9aAIRMrZ1xaE5dUmJXkcmcnY-iQUdNX" target="_blank">Syllabus</a> </div>
+            </div>
+          </div>
+		  
+
+		  <div class="resume-item d-flex flex-column flex-md-row mb-0">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Connecticut</h3>
+              <div class="mb-0">FNCE 6203: Theory of Financial Markets and Valuation (PhD) <a href="https://drive.google.com/file/d/1Lovgc3-h5-qFHmjpHcWLglHkfB-FkXIs/view?usp=sharing" target="_blank">Syllabus</a> </div>
+			  <div class="mb-0">FNCE 4209: Applications in Financial Management (Undergraduate) <a href="https://drive.google.com/file/d/1HYxpUy_A3Rr4SHy1i9K2YCZLls-Am0Z-/view?usp=sharing" target="_blank">Syllabus</a> </div>
+			  <div class="mb-0">FNCE 3101: Financial Management (Undergraduate) <a href="https://drive.google.com/file/d/1TrfcVoU2em2OpUJtyi2uxki_YTcuyHWy/view?usp=sharing" target="_blank">Syllabus</a> </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+	  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="mii">
+        <div class="my-auto">
+          <h2 class="mb-2">Media and Industry Impact</h2>
+		  <div>
+		   <h3 class="mb-0">Industry Collaborations on Research, Teaching, and Service</h3>
+		   <div style="display:block;text-align:left;margin-right:auto;margin-left:auto"><img src="img/engagements.png" width="747" height="483" border="0"></div>
+		   <br>
+		   
+		   <h3 class="mb-0">Media Coverage</h3>	
+		   <li><a href="https://www.valuewalk.com/2020/11/skewness-predict-bottom/" target="_blank">Could Skewness be Used with Trading Strategies to Predict Bottom?</a> | Value Walk, November 2020</li>
+		   <li><a href="https://wsvn.com/news/investigations/cash-zapped-users-of-popular-cash-app-complain-about-fake-phone-reps-lack-of-real-customer-service-support/" target="_blank">Interview on Cash App and Fintech Fraud</a> | WSVN 7 News, October 2020</li>
+		   <li><a href="https://www.rebellionresearch.com/blog/dr-paul-borochin-of-the-university-of-miami-business-school-asks-should" target="_blank">Should Options Be Their Own Asset Class? An Interview with Alexander Fleiss</a> | Rebellion Research, August 2020</li>
+		   <li><a href="https://www.rebellionresearch.com/blog/risk-neutral-skewness-predicts-price-rebounds-and-so-can-improve-momentum" target="_blank">Risk Neutral Skewness Predicts Price Rebounds and so Can Improve Momentum Performance</a> | Rebellion Research, August 2020</li>
+		   <li><a href="https://www.rebellionresearch.com/blog/the-information-content-of-the-term-structure-of-risk-neutral-skewness" target="_blank">The Information Content of the Term Structure of Risk-Neutral Skewness</a> | Rebellion Research, July 2020</li>
+		   <li><a href="https://clsbluesky.law.columbia.edu/2020/03/06/can-institutional-investors-help-the-market-evaluate-complex-legal-disputes/" target="_blank">Can Institutional Investors Help the Market Evaluate Complex Legal Disputes?</a> | Columbia Law Blue Sky Blog, March 2020</li>
+		   <li><a href="https://www.blackrock.com/corporate/insights/public-policy/common-ownership#third-party-publications" target="_blank">Common Ownership Types and Their Effects on Innovation and Competition</a> | Blackrock Public Policy, April 2019<a href="http://clsbluesky.law.columbia.edu/2019/03/15/do-boards-have-style-evidence-from-director-style-divergence-and-board-turnover/" target="_blank"> </a></li>
+		   <li><a href="http://clsbluesky.law.columbia.edu/2019/03/15/do-boards-have-style-evidence-from-director-style-divergence-and-board-turnover/" target="_blank">Do Boards Have Style? Evidence from Director Style Divergence and Board Turnover</a> | Columbia Law Blue Sky Blog, March 2019</li>
+		   <li><a href="https://blogs.cfainstitute.org/investor/2019/02/22/option-implied-skewness-and-the-momentum-anomaly/" target="_blank">Option-Implied Skewness and the Momentum Anomaly</a> | CFA Institute Enterprising Investor, February 2019<br></li>
+		   <li><a href="https://corpgov.law.harvard.edu/2018/07/18/the-effect-of-institutional-ownership-types-on-innovation-and-competition/" target="_blank">The Effect of Institutional Ownership Types On Innovation and Competition</a> | Harvard Law School Forum on Corporate Governance, July 2018</li>
+		   <li><a href="http://clsbluesky.law.columbia.edu/2017/01/09/how-institutional-investor-objectives-affect-firm-valuation-and-governance/" target="_blank"> How Institutional Investor Objectives Affect Firm Valuation and Governance</a> | Columbia Law Blue Sky Blog, January 2017</li>
+		   <li><a href="http://clsbluesky.law.columbia.edu/2016/01/04/the-role-of-the-chief-legal-officer-in-corporate-governance/" target="_blank">The Role of the Chief Legal Officer in Corporate Governance</a> | Columbia Law Blue Sky Blog, January 2016</li>
+	       <li><a href="http://clsbluesky.law.columbia.edu/2015/11/19/do-managers-seek-control-and-entrenchment/" target="_blank">Do Managers Seek Control and Entrenchment?</a> | Columbia Law Blue Sky Blog, November 2015</li>
+		</div>
+	  </section>
+	  
+	  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+				<div class="my-auto">
+					<h2 class="mb-3">Interests</h2>
+		  
+		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+				<p class="mb-0" style="text-align:justify">
+					I enjoy meditation, karate, chess, online courses, public speaking, investing, and combining technology with finance. In my spare time I like film, the outdoors, and spending time with my family. 
+				</p>
+			</div>
+			</div>
+			
+			<div class="resume-item d-flex flex-column flex-md-row mb-0">
+				<div class="resume-content mr-auto">
+				<h3 class="mb-0">Resources</h3>
+				<div class="mb-0" style="text-align:justify"><a href="https://www.youtube.com/watch?v=wlvOZIbBOnw&list=PLSh5E_hxCoI6JwHcdmFVme6u46cZsEZev" target="_blank">Machine Learning Conference</a>
+				 - Recordings of a conference I hosted in 2020 that focused on machine learning and natural language processing in finance.</div>
+				<div class="mb-0" style="text-align:justify"><a href="https://www.youtube.com/watch?v=OANlngSSVpM&list=PLSh5E_hxCoI7Uk4NIkUtV31B6ysOGr-5q" target="_blank">Investments Lectures</a>
+				 - My lectures on undergraduate investments covering the fundamentals of fixed income and equity.</div>
+				<div class="mb-0" style="text-align:justify"><a href="https://www.youtube.com/watch?v=AJikdVzL51A&list=PLSh5E_hxCoI6XX86IIB7iwJl7eAdKuPgz" target="_blank">Portfolio Management Tutorials</a> - Tips on how to use the Bloomberg platform to manage a portfolio.</div>
+				<div class="mb-0" style="text-align:justify"><a href="https://www.youtube.com/watch?v=6xcDS3BafJw&list=PLSh5E_hxCoI7PWbPPV6-U0cUv-eUv5A7n" target="_blank">Derivatives Lectures</a> - An introduction to futures, forwards, and options.</div>
+				<div class="mb-0" style="text-align:justify"><a href="https://www.youtube.com/watch?v=U4dayTU7ctU" target="_blank">ML and NLP Trends</a>
+				 - A virtual seminar that I gave at a joint FPA and CFA Society event on trends in Machine Learning and Natural Language Processing, featuring some of my own research on both.</div>
+				</div>
+			</div>
+
+			</div>
+			
+		  <h3 class="subheading mb-0"><a class="nav-link js-scroll-trigger" href="#about"><img src="img/scrolluparrow.svg" alt="" height="50">Scroll to top</a></h3>
+		</div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+	<!-- Script for citation -->
+	<script>
+	function citfunction(citdiv) {
+		var x = document.getElementById(citdiv);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+	</script>
+	
+	<!-- Script for read more less -->
+	<script>
+	function readmoreless(moretextid, moretextbtn) {
+	  var moreText = document.getElementById(moretextid);
+	  var btnText = document.getElementById(moretextbtn);
+
+	  if (moreText.style.display === "none") {
+		btnText.innerHTML = "<b>(Collapse)</b>"; 
+		moreText.style.display = "block";
+	  } else {
+		btnText.innerHTML = "<b>(Expand)</b>"; 
+		moreText.style.display = "none";
+	  }
+	}
+	</script>
+	
+  </body>
+
+</html>
