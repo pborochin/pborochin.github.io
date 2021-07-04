@@ -43,6 +43,8 @@
 	var csss = [bigcsss[2*currentday], bigcsss[2*currentday + 1]];
 	
 	var timedef = 1;
+	var numpress = 0;
+	
 	function timeStylesheet(currentTime) {
 		  if (0 <= currentTime&&currentTime < 6) {
 		   document.write("<link id='stylesheet' rel='stylesheet' href= '" + csss[0] + "' type='text/css'>");
@@ -57,15 +59,29 @@
 		   timedef = 0;
 		  }
 	}
-
+	
 	var currentTime_in = new Date().getHours();
 	timeStylesheet(currentTime_in);
-
-	
 	var stylesheet = document.getElementById("stylesheet");
+	
     function setStyleSheet(){
-		stylesheet.setAttribute('href', csss[1 - timedef]);
-		timedef = 1 - timedef;
+		numpress++;
+		alert(numpress);
+		if (numpress % 2 == 0) {
+			timedef = 1 - timedef;
+			csss = [bigcsss[2*currentday], bigcsss[2*currentday + 1]];
+			stylesheet.setAttribute('href', csss[1 - timedef]);
+		}
+		else {
+			if (currentday < 6) {
+				++currentday;
+			}
+			if (currentday >= 6){
+				currentday = 0;
+			}
+			csss = [bigcsss[2*currentday], bigcsss[2*currentday + 1]];
+			stylesheet.setAttribute('href', csss[1 - timedef]);
+		}
     } 
 	
 	</script>
